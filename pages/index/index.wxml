@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="page">
+    <view class="content">
+        <!-- 左侧内容区 -->
+        <scroll-view class="person-list" enable-back-to-top style="height: {{oHeight}}px" scroll-into-view="{{toView}}" scroll-y="true" scroll-with-animation="true">
+            <view class="person" wx:for="{{personList}}" wx:key="index" id="{{ 'inToView'+item.id}}">
+                <view class="person-sign">{{item.sign}}</view>
+                <view class="person-content">
+                    <view class="person-cont {{item.name.length > 1 ? 'border' : ''}}" bindtap="choose" data-item="{{it}}" wx:for="{{item.name}}" wx:key="id" wx:for-item="it">
+                        <image class="person-head" src="{{it.head_img ? it.head_img : default_img}}"></image>
+                        <text class="person-name">{{it.name}}</text>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <!-- 左侧字母栏 -->
+        <scroll-view class="letter-list">
+            <view class="letter" wx:for="{{personList}}" wx:key="index" catchtap="chooseLetter" data-item="{{item}}">{{item.sign}}</view>
+        </scroll-view>
+    </view>
+</view>

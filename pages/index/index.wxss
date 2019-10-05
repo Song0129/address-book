@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+.page .content .person-list .person {
+    margin-bottom: 18rpx;
+    background: #fff;
+    display: flex;
+}
+
+.page .content .person-list .person .person-sign {
+    width: 80rpx;
+    text-align: center;
+    margin-top: 46rpx;
+    font-size: 32rpx;
+    font-family: Arial;
+    color: #313133;
+}
+
+.page .content .person-list .person .person-content {
+    width: calc(100% - 80rpx);
+}
+
+.page .content .person-list .person .person-content .person-cont {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0;
+}
+
+.page .content .person-list .person .person-content .person-cont .person-head {
+    width: 80rpx;
+    height: 80rpx;
+    background: #f7f7f7;
+    border-radius: 50%;
+    margin-right: 40rpx;
+}
+
+.page .content .person-list .person .person-content .person-cont .person-name {
+    font-size: 32rpx;
+    color: #313133;
+}
+
+.page .content .person-list .person .person-content .border {
+    border-bottom: 1rpx solid #f7f7f7;
+}
+
+.page .content .letter-list {
+    position: fixed;
+    top: 80rpx;
+    right: 0;
+    z-index: 999;
+    width: 90rpx;
+    font-family: Arial;
+    font-size: 26rpx;
+    text-align: center;
+}
+
+.page .content .letter-list .letter {
+    margin-bottom: 10rpx;
+    padding: 0 20rpx;
+}
